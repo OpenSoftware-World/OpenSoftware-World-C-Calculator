@@ -10,7 +10,7 @@ int	MikeMain(void *argument)
 	static  int     Num2;
 	static  int     Result;
 
-	mikeos_print_string("OpenSoftware-World C-Calculator (v1.0) for MikeOS v4.7.0");
+	mikeos_print_string("OpenSoftware-World C-Calculator (v1.1) for MikeOS v4.7.0");
 	mikeos_print_newline();
 
 	mikeos_print_string("Copyright (c) 2026 OpenSoftware-World");
@@ -26,6 +26,10 @@ int	MikeMain(void *argument)
 	mikeos_print_string("Processes : +, -, *, /");
 	mikeos_print_newline();
 	mikeos_print_newline();
+
+	mikeos_print_string("Please press any key to continue.");
+	mikeos_print_newline();
+	mikeos_wait_for_key();
 
 	mikeos_input_dialog(Buf, "Please select a transaction number: ");
 	mikeos_print_newline();
