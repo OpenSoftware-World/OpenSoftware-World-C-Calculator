@@ -7,7 +7,7 @@ LD = ld86
 LDFLAGS = -y -d -T8000 -HD800 -0 -C0 -lmikeos
 
 # ----------------------------------------------------------------------------
-SRC = os_w_calc.c
+SRC = oswcalc.c
 
 TARGET = $(addsuffix .bin, $(basename $(SRC)))
 OBJ = $(addsuffix .o, $(basename $(SRC)))
