@@ -10,7 +10,7 @@ int	MikeMain(void *argument)
 	static  int     Num2;
 	static  int     Result;
 
-	mikeos_draw_background("OpenSoftware-World C-Calculator for MikeOS v4.7.0", "v1.1", 0x001f);
+	mikeos_draw_background("OpenSoftware-World C-Calculator for MikeOS v4.7.0", "v1.2", 0x001f);
 
 	mikeos_print_string("Copyright (c) 2026 OpenSoftware-World");
 	mikeos_print_newline();
@@ -103,6 +103,7 @@ int	MikeMain(void *argument)
 	}
 	mikeos_print_newline();
 	mikeos_print_newline();
+	mikeos_wait_for_key();
 
 	return 0;
 }
